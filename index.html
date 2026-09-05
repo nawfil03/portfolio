@@ -1,501 +1,1099 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nawfil Faraaz | Data Scientist & Software Developer</title>
-  <meta name="description" content="Portfolio of Nawfil Faraaz — Data Scientist and Software Developer based in Dubai, UAE. Expert in Python, Machine Learning, LangChain, Node.js, and enterprise-grade scalable systems.">
-  <meta name="keywords" content="Data Scientist, Software Developer, Machine Learning, Python, LangChain, n8n, Node.js, React, AI Agent, Dubai">
-  <meta name="author" content="Nawfil Faraaz">
-
-  <!-- Open Graph / LinkedIn Preview -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Nawfil Faraaz | Data Scientist & Software Developer">
-  <meta property="og:description" content="Software Developer and Data Scientist specializing in scalable data solutions, AI-integrated backends, and enterprise web applications.">
-
-  <!-- Premium Modern Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="icon" href="/nf-logo.svg" type="image/svg+xml">
+  <meta
+    name="description"
+    content="Nawfil Faraaz is a Data Scientist & Software Developer (MSc Data Science GPA 8.6) specializing in AI Agents, RAG Pipelines, NestJS/Node.js, and Data Analytics."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
 </head>
-
-<body class="loading">
-  <!-- Subtle Grid Background -->
-  <div class="bg-grid"></div>
-
-  <!-- Navigation Bar -->
-  <nav class="glass-nav">
-    <div class="nav-brand">
-      <div class="logo-container">
-        <div class="logo-box">
-          <span class="logo-text">NF</span>
-          <div class="logo-glow"></div>
-        </div>
-        <span class="brand-text">Nawfil<span class="text-gradient-static">Faraaz</span></span>
-      </div>
+<body class="loading light-theme">
+  <!-- Loading bar for 300 frame sequence -->
+  <div id="sequence-loader" class="sequence-loader">
+    <div class="loader-inner">
+      <div class="loader-spinner"></div>
+      <p class="loader-text">Loading Nawfil's Resume & Interactive Experience...</p>
+      <div class="loader-bar"><div id="loader-progress" class="loader-progress"></div></div>
     </div>
-    <div class="nav-links">
-      <a href="#about" class="nav-item">About</a>
-      <a href="#experience" class="nav-item">Experience</a>
-      <a href="#projects" class="nav-item">Projects</a>
-      <a href="#skills" class="nav-item">Skills</a>
-    </div>
-    <div class="nav-right">
-      <div class="nav-status">
-        <span class="status-dot blink"></span> Open to Work
-      </div>
-      <a href="https://github.com/nawfil03" target="_blank" class="nav-icon-btn" aria-label="GitHub">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
-      </a>
-      <a href="mailto:nawfil2003@gmail.com" class="nav-icon-btn" aria-label="Email">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-      </a>
-    </div>
-    <button class="menu-toggle" aria-label="Toggle menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="3" y1="12" x2="21" y2="12"></line>
-        <line x1="3" y1="6" x2="21" y2="6"></line>
-        <line x1="3" y1="18" x2="21" y2="18"></line>
-      </svg>
-    </button>
-  </nav>
-
-  <!-- Mobile Menu Overlay -->
-  <div class="mobile-menu">
-    <a href="#about" class="nav-item">About</a>
-    <a href="#experience" class="nav-item">Experience</a>
-    <a href="#projects" class="nav-item">Projects</a>
-    <a href="#skills" class="nav-item">Skills</a>
-    <a href="#" class="nav-item view-cv-trigger">View CV</a>
   </div>
 
-  <main class="main-container">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top" aria-label="Nawfil Faraaz home">
+        <span class="brand-copy">
+          <strong>Nawfil Faraaz</strong>
+          <span>Data Scientist · Software Developer</span>
+        </span>
+      </a>
 
-    <!-- HERO SECTION -->
-    <section class="hero-section">
-      <div class="hero-container">
-        <div class="hero-content">
-          <span class="accent-badge">📍 Dubai, UAE &nbsp;·&nbsp; Strategic Engineer</span>
-          <h1 class="mega-title">Engineering Data<br><span class="text-gradient">into Strategic Action</span></h1>
-          <p class="hero-desc">Bridging the gap between complex software architecture and intelligent data insights. I build scalable systems that don't just process data—they drive clear, measurable business outcomes.</p>
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#ai-engine">AI Agents Engine</a>
+        <a href="#terminal-labs">Terminal Console</a>
+        <a href="#experience">Experience & Startup</a>
+        <a href="#projects">Key Projects</a>
+        <a href="#certifications">Certifications</a>
+      </nav>
 
-          <div class="hero-actions">
-            <a href="#projects" class="btn-primary">View Projects</a>
-            <a href="#" class="btn-secondary view-cv-trigger">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-              View CV
-            </a>
-            <a href="https://www.linkedin.com/in/nawfil-faraaz-shahul-hameed-645331284/" target="_blank" class="social-link" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
-            <a href="https://github.com/nawfil03" target="_blank" class="social-link" aria-label="GitHub">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
-            </a>
+      <div class="topbar-actions">
+        <button class="button button-secondary button-small open-resume-modal" type="button"><span style="margin-right:0.35rem">👁️</span> View Resume</button>
+        <a class="button button-primary button-small" href="#contact">Contact</a>
+        <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="#about">About</a>
+    <a href="#ai-engine">AI Agents Engine</a>
+    <a href="#terminal-labs">Terminal Console</a>
+    <a href="#experience">Experience & Startup</a>
+    <a href="#projects">Key Projects</a>
+    <a href="#certifications">Certifications</a>
+    <button class="button button-secondary button-wide open-resume-modal" type="button">👁️ View Resume</button>
+    <a class="button button-primary button-wide" href="#contact">Contact</a>
+  </div>
+
+  <main id="top">
+    <!-- Interactive Portrait Scroll Section with Ultra-Tech HUD Side Cards -->
+    <section class="scroll-sequence-section" id="hero-sequence">
+      <div class="sticky-sequence-viewport">
+        <!-- Full Bleed Canvas -->
+        <div class="canvas-wrapper">
+          <canvas id="sequence-canvas"></canvas>
+        </div>
+
+        <!-- Tech Telemetry HUD Elements (Top Corners) -->
+        <div class="tech-hud-layer" aria-hidden="true">
+          <div class="hud-tag hud-tag-left">
+            <span class="hud-dot"></span>
+            <span class="hud-label">DUBAI, UAE // ACTIVE CANDIDATE</span>
+          </div>
+
+          <!-- Creative Cyber Scroll Progress Gauge -->
+          <div class="hud-tag hud-tag-right hud-progress-gauge">
+            <span class="hud-mono" id="hud-progress-text">SCRUB // 0%</span>
+            <div class="hud-mini-track">
+              <div class="hud-mini-bar" id="hud-progress-bar"></div>
+            </div>
           </div>
         </div>
 
-        <div class="hero-image-wrapper">
-          <div class="hero-image-glow"></div>
-          <div class="hero-image-border">
-            <img src="/professsional picture.jpg" alt="Nawfil Faraaz" class="hero-profile-pic">
+        <!-- Non-Hitting Side Container Layout -->
+        <div class="sequence-floating-layer">
+          <!-- Left Column Floating HUD Overlay -->
+          <div class="side-column side-column-left">
+            <div class="text-overlay sequence-card hud-glass-card active" data-stage="0">
+              <span class="hud-bracket top-left"></span>
+              <span class="hud-bracket top-right"></span>
+              <span class="hud-bracket bottom-left"></span>
+              <span class="hud-bracket bottom-right"></span>
+
+              <div class="hud-card-header">
+                <span class="eyebrow-tag"><span class="tag-pulse"></span> Nawfil Faraaz</span>
+                <span class="hud-stage-num">[01 // EXECUTIVE PROFILE]</span>
+              </div>
+
+              <h1 class="hero-display-title">
+                Data Scientist & Software Developer.
+              </h1>
+              <p class="hero-lead-text">
+                Master’s in Data Science (GPA 8.6). Architecting AI agents, RAG pipelines, NestJS/Node.js backend systems, and predictive data analytics.
+              </p>
+
+              <div class="hero-cta-group">
+                <a class="button button-primary" href="#projects">View Live Projects</a>
+                <a class="button button-secondary" href="#contact">Contact Me</a>
+              </div>
+
+              <div class="hud-card-footer">
+                <div class="scroll-prompt">
+                  <span class="scroll-line"></span>
+                  <span>Scroll to scrub timeline</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-overlay sequence-card hud-glass-card" data-stage="2">
+              <span class="hud-bracket top-left"></span>
+              <span class="hud-bracket top-right"></span>
+              <span class="hud-bracket bottom-left"></span>
+              <span class="hud-bracket bottom-right"></span>
+
+              <div class="hud-card-header">
+                <span class="eyebrow-tag"><span class="tag-pulse"></span> TechnoCIT Experience</span>
+                <span class="hud-stage-num">[03 // FULL-STACK ARCHITECTURE]</span>
+              </div>
+
+              <h2 class="section-overlay-title">2+ Years @ TechnoCIT Dubai</h2>
+              <p class="hero-lead-text">
+                Software Developer & AI Engineer Intern. Spearheaded TwinTik B2B store platform, NestJS/Node.js/PostgreSQL backends, and CMS platforms (Webflow, Wix, Tridion).
+              </p>
+
+              <div class="tech-badge-list">
+                <span class="tech-chip"><i class="chip-dot"></i> TwinTik Developer</span>
+                <span class="tech-chip"><i class="chip-dot"></i> NestJS / Node.js</span>
+                <span class="tech-chip"><i class="chip-dot"></i> PostgreSQL / SQL</span>
+                <span class="tech-chip"><i class="chip-dot"></i> CMS Platforms</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center Channel Spacer (Keeps portrait 100% clear of text hitting) -->
+          <div class="center-channel-spacer" aria-hidden="true"></div>
+
+          <!-- Right Column Floating HUD Overlay -->
+          <div class="side-column side-column-right">
+            <div class="text-overlay sequence-card hud-glass-card" data-stage="1">
+              <span class="hud-bracket top-left"></span>
+              <span class="hud-bracket top-right"></span>
+              <span class="hud-bracket bottom-left"></span>
+              <span class="hud-bracket bottom-right"></span>
+
+              <div class="hud-card-header">
+                <span class="eyebrow-tag"><span class="tag-pulse"></span> AI Agents & RAG</span>
+                <span class="hud-stage-num">[02 // LLM & PROMPT ENGINEERING]</span>
+              </div>
+
+              <h2 class="section-overlay-title">AI Agents & Prompt Injection for KB</h2>
+              <p class="hero-lead-text">
+                Built AI agent prototypes for booking & virtual assistance using RAG pipelines, LangChain, Pinecone vector memory, n8n, and prompt injection for KB for AI agents.
+              </p>
+
+              <div class="highlight-stats">
+                <div class="stat-item">
+                  <strong>AI Agents</strong>
+                  <span>Booking & Virtual Support</span>
+                </div>
+                <div class="stat-item">
+                  <strong>8.6 GPA</strong>
+                  <span>MSc Data Science</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-overlay sequence-card hud-glass-card" data-stage="3">
+              <span class="hud-bracket top-left"></span>
+              <span class="hud-bracket top-right"></span>
+              <span class="hud-bracket bottom-left"></span>
+              <span class="hud-bracket bottom-right"></span>
+
+              <div class="hud-card-header">
+                <span class="eyebrow-tag"><span class="tag-pulse"></span> Startup & Impact</span>
+                <span class="hud-stage-num">[04 // AQADEMIQ & CLIENTS]</span>
+              </div>
+
+              <h2 class="section-overlay-title">Aqademiq Lead & Client Work</h2>
+              <p class="hero-lead-text">
+                Data Analytics Lead at Aqademiq (built investor dashboards), ADCB, Suntory Beverages, and automated tools reducing workload by 70%.
+              </p>
+
+              <div class="tech-badge-list right-align">
+                <span class="tech-chip"><i class="chip-dot"></i> Investor Dashboards</span>
+                <span class="tech-chip"><i class="chip-dot"></i> ADCB Brochure</span>
+                <span class="tech-chip"><i class="chip-dot"></i> -70% Manual Work</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- STATS BAR -->
-    <section class="stats-bar reveal">
-      <div class="stat-item">
-        <span class="stat-number">2+</span>
-        <span class="stat-label">Years Experience</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-number">8.6</span>
-        <span class="stat-label">Current GPA (MSc)</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-number">7+</span>
-        <span class="stat-label">Certifications</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-number">15+</span>
-        <span class="stat-label">Technologies</span>
-      </div>
-    </section>
-
-    <!-- CORE CAPABILITIES -->
-    <section class="grid-section cap-grid reveal">
-      <!-- Capability 1 -->
-      <div class="ui-card flex-col cap-card">
-        <div class="cap-icon" style="--cap-color: #6366f1;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+    <!-- Trust Strip with ATS Resume Metrics -->
+    <section class="trust-strip reveal">
+      <div class="container trust-grid">
+        <div class="trust-card tilt-card spotlight-card">
+          <div class="trust-badge">COMPANY</div>
+          <strong>TechnoCIT</strong>
+          <span>2 yrs 1 mo (Software & AI Dev)</span>
         </div>
-        <h3 class="cap-title">Frontend Engineering</h3>
-        <p class="item-desc">Responsive, accessible client applications built on component-driven architectures. Delivering intuitive user experiences at scale with React, TypeScript, and modern CSS.</p>
-      </div>
-
-      <!-- Capability 2 -->
-      <div class="ui-card flex-col cap-card">
-        <div class="cap-icon" style="--cap-color: #06b6d4;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+        <div class="trust-card tilt-card spotlight-card">
+          <div class="trust-badge">STARTUP</div>
+          <strong>Aqademiq Lead</strong>
+          <span>Data Analytics Lead & Investor Dashboards</span>
         </div>
-        <h3 class="cap-title">Software Development</h3>
-        <p class="item-desc">End-to-end product lifecycles integrating React frontends with secure, stateful Node.js or Python backends, RESTful APIs, and enterprise-grade authentication.</p>
-      </div>
-
-      <!-- Capability 3 -->
-      <div class="ui-card flex-col cap-card">
-        <div class="cap-icon" style="--cap-color: #10b981;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+        <div class="trust-card tilt-card spotlight-card">
+          <div class="trust-badge">MASTER'S</div>
+          <strong>8.6 GPA</strong>
+          <span>MSc Data Science (Middlesex Dubai)</span>
         </div>
-        <h3 class="cap-title">Cloud & Backend Infrastructure</h3>
-        <p class="item-desc">High-availability distributed systems using Node.js and Python. Microservices architecture, secure REST/GraphQL API endpoints, and scalable cloud deployments on AWS and GCP.</p>
-      </div>
-
-      <!-- Capability 4 -->
-      <div class="ui-card flex-col cap-card">
-        <div class="cap-icon" style="--cap-color: #f59e0b;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
-        </div>
-        <h3 class="cap-title">Database Architecture</h3>
-        <p class="item-desc">Robust normalized SQL and flexible NoSQL data models. Deep understanding of indexing strategies, relational integrity, and query optimization for maximum throughput.</p>
-      </div>
-
-      <!-- Capability 5 -->
-      <div class="ui-card flex-col cap-card">
-        <div class="cap-icon" style="--cap-color: #ec4899;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-        </div>
-        <h3 class="cap-title">Enterprise Workflow Automation</h3>
-        <p class="item-desc">Intricate data pipelines and automated API integrations via n8n and scripting. Reducing operational overhead and ensuring seamless inter-system communication.</p>
-      </div>
-
-      <!-- Capability 6 -->
-      <div class="ui-card flex-col cap-card">
-        <div class="cap-icon" style="--cap-color: #a78bfa;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5H2m20 0h-8m-2 15l10 5 10-5-10-5H2m20 0h-8"></path></svg>
-        </div>
-        <h3 class="cap-title">AI-Accelerated Development</h3>
-        <p class="item-desc">Mastery in **Prompt Coding**, delivering complex enterprise features at 10x velocity. Expert in translating high-level business logic into production-ready code through AI-native workflows.</p>
-      </div>
-    </section>
-
-    <!-- FULL LIFECYCLE BANNER -->
-    <section class="grid-section reveal">
-      <div class="ui-card lifecycle-banner">
-        <div class="lifecycle-grid">
-          <div class="lifecycle-item">
-            <span class="lifecycle-step">Develop</span>
-            <p>Architecting scalable solutions with AI-native precision.</p>
-          </div>
-          <div class="lifecycle-arrow">→</div>
-          <div class="lifecycle-item">
-            <span class="lifecycle-step">Deploy</span>
-            <p>Automating CI/CD pipelines for zero-downtime releases.</p>
-          </div>
-          <div class="lifecycle-arrow">→</div>
-          <div class="lifecycle-item">
-            <span class="lifecycle-step">Host</span>
-            <p>Managing high-availability cloud infrastructure on AWS/GCP.</p>
-          </div>
+        <div class="trust-card tilt-card spotlight-card">
+          <div class="trust-badge">SPECIALIZATION</div>
+          <strong>AI Agents & RAG</strong>
+          <span>LangChain, Pinecone & Prompt Defense</span>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT & EDUCATION -->
-    <section id="about" class="grid-section layout-2col reveal">
-      <!-- About Me Card -->
-      <div class="ui-card">
-        <h2 class="section-title">About Me</h2>
-        <p class="about-text">I'm a <strong>Strategic Data Engineer and Software Developer</strong> currently pursuing my MSc in Data Science (GPA: 8.6). I specialize in building the technical bridge between raw data and actionable business intelligence.</p>
-        <p class="about-text">With expertise across the full stack—from React frontends to Python/Node.js backends and AI-driven automation—I don't just write code; I architect solutions that eliminate operational bottlenecks and drive measurable growth. My approach is rooted in delivering maintainable, future-proof systems that align technical excellence with business strategy.</p>
-        <div class="about-meta">
-          <div class="about-meta-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-            Dubai, UAE
-          </div>
-          <div class="about-meta-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-            Open to Full-Time & Internship Roles
-          </div>
-          <div class="about-meta-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            +971 55 794 7447
-          </div>
+    <!-- RUNNING LOGO DISPLAY: COMPANIES & PROJECTS WORKED ON -->
+    <section class="logo-marquee-section reveal">
+      <div class="container">
+        <div class="marquee-header">
+          <p class="section-kicker">// ENTERPRISE & CLIENT PORTFOLIO</p>
+          <h2 class="marquee-title">Companies & Enterprise Projects I Have Worked On</h2>
         </div>
       </div>
 
-      <!-- Education Card -->
-      <div class="ui-card">
-        <h2 class="section-title">Education</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="flex-between">
-              <h3 class="item-title">MSc Data Science</h3>
-              <span class="item-date">2024 – Present</span>
+      <div class="logo-marquee-container">
+        <div class="logo-marquee-track">
+          <!-- Logo 1: TwinTik -->
+          <div class="logo-marquee-card">
+            <div class="logo-img-box">
+              <img src="/logo/twintik-logo.jpg" alt="TwinTik B2B Platform Logo" class="logo-img" />
             </div>
-            <p class="item-subtitle">Middlesex University Dubai</p>
-            <p class="item-desc">Current GPA: 8.6 &nbsp;·&nbsp; Member of College Union</p>
-            <p class="item-desc" style="color: var(--accent-secondary); font-weight: 500;">Impact: Developing advanced predictive models for real-time data streaming and enterprise analytics.</p>
-            <div class="edu-tags">
-              <span>Machine Learning</span><span>Deep Learning</span><span>Big Data</span><span>Analytics</span>
+            <div class="logo-card-info">
+              <strong class="logo-name">TwinTik</strong>
+              <span class="logo-desc">Apple & Google App Store Deployed B2B Platform</span>
             </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="flex-between">
-              <h3 class="item-title">BCA (Computer Applications)</h3>
-              <span class="item-date">2021 – 2024</span>
+          <!-- Logo 2: ADCB Bank -->
+          <div class="logo-marquee-card">
+            <div class="logo-img-box">
+              <img src="/logo/adcb-logo.webp" alt="ADCB Abu Dhabi Commercial Bank Logo" class="logo-img" />
             </div>
-            <p class="item-subtitle">Madras University — New College, Chennai</p>
-            <p class="item-desc">Graduated with 8.4 GPA</p>
-            <p class="item-desc" style="color: var(--accent-secondary); font-weight: 500;">Impact: Designed a high-availability student information system as a final year capstone project.</p>
-            <div class="edu-tags">
-              <span>Data Structures</span><span>DBMS</span><span>OOP (Java)</span><span>Web Dev</span>
+            <div class="logo-card-info">
+              <strong class="logo-name">ADCB Bank</strong>
+              <span class="logo-desc">Abu Dhabi Commercial Bank Interactive Web Brochure</span>
             </div>
           </div>
-        </div>
 
-        <h2 class="section-title" style="margin-top: 2.5rem;">Certifications</h2>
-        <ul class="badge-list">
-          <li><span class="cert-issuer">Google</span> Data Analytics Professional Certificate</li>
-          <li><span class="cert-issuer">Cisco</span> Data Science Essentials</li>
-          <li><span class="cert-issuer">Cisco</span> Cybersecurity Fundamentals</li>
-          <li><span class="cert-issuer">Udemy</span> Full-Stack Web Development Bootcamp</li>
-          <li><span class="cert-issuer">LinkedIn</span> Advanced Java Programming Principles</li>
-          <li><span class="cert-issuer">LinkedIn</span> Power BI Essential Training</li>
-          <li><span class="cert-issuer">GUVI</span> Python Programming</li>
-        </ul>
-      </div>
-    </section>
+          <!-- Logo 3: Suntory Beverages -->
+          <div class="logo-marquee-card">
+            <div class="logo-img-box">
+              <img src="/logo/suntory-logo.webp" alt="Suntory Beverages Logo" class="logo-img" />
+            </div>
+            <div class="logo-card-info">
+              <strong class="logo-name">Suntory Beverages</strong>
+              <span class="logo-desc">Responsive Web Application & Digital Platform</span>
+            </div>
+          </div>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="grid-section reveal">
-      <div class="ui-card flex-col">
-        <h2 class="section-title">Professional Experience</h2>
+          <!-- Logo 4: Incha -->
+          <div class="logo-marquee-card">
+            <div class="logo-img-box">
+              <img src="/logo/incha-logo.png" alt="Incha Logo" class="logo-img" />
+            </div>
+            <div class="logo-card-info">
+              <strong class="logo-name">Incha</strong>
+              <span class="logo-desc">Digital Solutions & Web Platform Development</span>
+            </div>
+          </div>
 
-        <div class="experience-block">
-          <div class="exp-header">
-            <div>
-              <h3 class="exp-role">Software Engineer Intern</h3>
-              <p class="exp-company">TechNo CIT</p>
+          <!-- Duplicate Set 1 for Infinite Loop -->
+          <div class="logo-marquee-card">
+            <div class="logo-img-box">
+              <img src="/logo/twintik-logo.jpg" alt="TwinTik B2B Platform Logo" class="logo-img" />
             </div>
-            <span class="exp-date badge-outline">2024 – Present</span>
+            <div class="logo-card-info">
+              <strong class="logo-name">TwinTik</strong>
+              <span class="logo-desc">Apple & Google App Store Deployed B2B Platform</span>
+            </div>
           </div>
-          <ul class="exp-details">
-            <li>Architecting and maintaining complex **React-based frontend systems**, implementing atomic design patterns for maximum component reusability and scalability.</li>
-            <li>Engineering high-performance **Node.js and Python (FastAPI/Flask) backends**, designing secure RESTful and GraphQL API layers with robust middleware authentication.</li>
-            <li>Optimizing **PostgreSQL and MongoDB database schemas**, implementing advanced indexing strategies and query optimizations that reduced data retrieval times by <span class="highlight">40%</span>.</li>
-            <li>Leading the migration from monolithic architecture to **Microservices**, improving system resilience and horizontal scalability across AWS-hosted environments.</li>
-            <li>Implementing **CI/CD pipelines** and containerization via **Docker**, streamlining the development lifecycle and reducing deployment errors by <span class="highlight">25%</span>.</li>
-            <li>Bridging data science insights with application logic by integrating **LangChain and Vector Databases (Pinecone)** for RAG-based AI features.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
 
-    <!-- AI-NATIVE ENGINEERING SECTOR -->
-    <section class="grid-section reveal">
-      <div class="ui-card ai-native-card">
-        <div class="flex-between align-center">
-          <div>
-            <h2 class="section-title" style="margin-bottom: 0.5rem;">AI-Native Engineering</h2>
-            <p class="section-subtitle">Leveraging the full potential of Generative AI for 10x development velocity.</p>
-          </div>
-          <div class="ai-badge">Expert</div>
-        </div>
-        
-        <div class="ai-grid">
-          <div class="ai-tool">
-            <div class="ai-tool-header">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
-              <h4>Prompt Coding Mastery</h4>
+          <div class="logo-marquee-card">
+            <div class="logo-img-box">
+              <img src="/logo/adcb-logo.webp" alt="ADCB Abu Dhabi Commercial Bank Logo" class="logo-img" />
             </div>
-            <p>Transforming complex requirements into optimized system architectures through **Prompt Engineering**. Expert in executing end-to-end development cycles from scratch to production.</p>
-          </div>
-          <div class="ai-tool">
-            <div class="ai-tool-header">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
-              <h4>Prompt Engineering</h4>
+            <div class="logo-card-info">
+              <strong class="logo-name">ADCB Bank</strong>
+              <span class="logo-desc">Abu Dhabi Commercial Bank Interactive Web Brochure</span>
             </div>
-            <p>Crafting sophisticated multi-shot and chain-of-thought prompts for **GPT-4o, Claude 3.5 Sonnet, and Gemini Pro**. Specializing in code generation and architectural reasoning.</p>
           </div>
-          <div class="ai-tool">
-            <div class="ai-tool-header">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
-              <h4>Autonomous Agents</h4>
+
+          <div class="logo-marquee-card">
+            <div class="logo-img-box">
+              <img src="/logo/suntory-logo.webp" alt="Suntory Beverages Logo" class="logo-img" />
             </div>
-            <p>Building specialized AI agents using **AutoGPT and CrewAI** to automate repetitive engineering tasks, documentation generation, and unit test coverage.</p>
+            <div class="logo-card-info">
+              <strong class="logo-name">Suntory Beverages</strong>
+              <span class="logo-desc">Responsive Web Application & Digital Platform</span>
+            </div>
+          </div>
+
+          <div class="logo-marquee-card">
+            <div class="logo-img-box">
+              <img src="/logo/incha-logo.png" alt="Incha Logo" class="logo-img" />
+            </div>
+            <div class="logo-card-info">
+              <strong class="logo-name">Incha</strong>
+              <span class="logo-desc">Digital Solutions & Web Platform Development</span>
+            </div>
+          </div>
+
+          <!-- Duplicate Set 2 for Seamless Continuous Infinite Scroll -->
+          <div class="logo-marquee-card">
+            <div class="logo-img-box">
+              <img src="/logo/twintik-logo.jpg" alt="TwinTik B2B Platform Logo" class="logo-img" />
+            </div>
+            <div class="logo-card-info">
+              <strong class="logo-name">TwinTik</strong>
+              <span class="logo-desc">Apple & Google App Store Deployed B2B Platform</span>
+            </div>
+          </div>
+
+          <div class="logo-marquee-card">
+            <div class="logo-img-box">
+              <img src="/logo/adcb-logo.webp" alt="ADCB Abu Dhabi Commercial Bank Logo" class="logo-img" />
+            </div>
+            <div class="logo-card-info">
+              <strong class="logo-name">ADCB Bank</strong>
+              <span class="logo-desc">Abu Dhabi Commercial Bank Interactive Web Brochure</span>
+            </div>
+          </div>
+
+          <div class="logo-marquee-card">
+            <div class="logo-img-box">
+              <img src="/logo/suntory-logo.webp" alt="Suntory Beverages Logo" class="logo-img" />
+            </div>
+            <div class="logo-card-info">
+              <strong class="logo-name">Suntory Beverages</strong>
+              <span class="logo-desc">Responsive Web Application & Digital Platform</span>
+            </div>
+          </div>
+
+          <div class="logo-marquee-card">
+            <div class="logo-img-box">
+              <img src="/logo/incha-logo.png" alt="Incha Logo" class="logo-img" />
+            </div>
+            <div class="logo-card-info">
+              <strong class="logo-name">Incha</strong>
+              <span class="logo-desc">Digital Solutions & Web Platform Development</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- METHODOLOGY -->
-    <section class="grid-section">
-      <div class="section-header w-full">
-        <h2 class="section-title text-center">Development Methodology</h2>
-        <p class="section-subtitle text-center">A rigorous, scalable framework for delivering production-ready enterprise applications.</p>
-      </div>
+    <!-- MEANINGFUL 3D AI AGENTS & RAG PIPELINE ENGINE -->
+    <section id="ai-engine" class="section cyber-sphere-section reveal">
+      <div class="container sphere-container">
+        <div class="sphere-text-col">
+          <p class="section-kicker">// AI AGENT & PROMPT DEFENSE ENGINE</p>
+          <h2 class="sphere-title">AI Agents, RAG Pipelines & Vector Memory</h2>
+          <p class="sphere-desc">
+            Visualizing Nawfil’s production AI stack: Booking automation AI agents, LangChain/LangSmith evaluation, Prompt Injection Testing & Defense, Pinecone Vector DB, and Computer Vision Face Detection.
+          </p>
+          <div class="sphere-stats-row">
+            <div class="sp-stat">
+              <span class="sp-num">AI Agents</span>
+              <span class="sp-lbl">Booking & Virtual Support</span>
+            </div>
+            <div class="sp-stat">
+              <span class="sp-num">Prompt Injection</span>
+              <span class="sp-lbl">For KB for AI Agents</span>
+            </div>
+            <div class="sp-stat">
+              <span class="sp-num">RAG / Vector</span>
+              <span class="sp-lbl">Pinecone & LangChain</span>
+            </div>
+          </div>
+        </div>
 
-      <div class="workflow-container">
-        <div class="workflow-step">
-          <div class="step-icon">01</div>
-          <div class="step-content">
-            <h4>Systems & Requirements Architecture</h4>
-            <p>Translating complex business requirements into robust technical specifications. Designing system topologies, scalable database schemas, and clear API contracts before implementation begins.</p>
-          </div>
-        </div>
-        <div class="workflow-step">
-          <div class="step-icon">02</div>
-          <div class="step-content">
-            <h4>Component-Driven Frontend Development</h4>
-            <p>Building scalable, pixel-perfect user interfaces using React and modern frameworks. Prioritizing accessibility, responsive design systems, and efficient state management.</p>
-          </div>
-        </div>
-        <div class="workflow-step">
-          <div class="step-icon">03</div>
-          <div class="step-content">
-            <h4>Backend & Service Implementation</h4>
-            <p>Engineering secure, high-throughput microservices with Node.js and Python. Establishing optimized data access layers, RESTful APIs, and robust business logic modules.</p>
-          </div>
-        </div>
-        <div class="workflow-step">
-          <div class="step-icon">04</div>
-          <div class="step-content">
-            <h4>Deployment, QA & Integrations</h4>
-            <p>Deploying via CI/CD pipelines to cloud environments. Integrating third-party APIs, workflow automations (n8n), and LLM-powered modules (LangChain) with strict performance and security auditing.</p>
+        <div class="sphere-canvas-col">
+          <div class="sphere-canvas-wrapper">
+            <canvas id="cyber-sphere-canvas"></canvas>
+            <div class="sphere-hud-ring">
+              <span class="ring-tag">AI CORE // PROMPT DEFENSE & AGENT VECTOR NODE ACTIVE</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS DATABASE -->
-    <section class="grid-section reveal">
-      <div class="section-header w-full">
-        <h2 class="section-title text-center">Featured Projects</h2>
-        <p class="section-subtitle text-center">Live repositories pulled from
-          <a href="https://github.com/nawfil03" target="_blank" class="inline-link">github.com/nawfil03</a>
+    <!-- About Section with Resume Professional Summary -->
+    <section id="about" class="section">
+      <div class="container section-head reveal">
+        <p class="section-kicker">// 01. PROFESSIONAL SUMMARY</p>
+        <h2>Data Scientist & Software Developer bridging AI agents with scalable product engineering.</h2>
+        <p>
+          Data Scientist and Software Developer with a Master's in Data Science (GPA 8.6) and hands-on experience building end-to-end AI and full-stack solutions. Skilled in Python, SQL, machine learning, and cloud computing (AWS/GCP), with specialized expertise in LLMs, RAG, AI agent development, and prompt engineering.
         </p>
       </div>
-      <div id="projects" class="projects-grid-inner">
-        <!-- Dynamic projects injected by main.js -->
+
+      <div class="container about-grid">
+        <article class="info-card creative-card tilt-card spotlight-card reveal">
+          <div class="card-head-bar">
+            <span class="card-label">// ATS PROFILE SNAPSHOT</span>
+            <span class="status-pill">AVAILABLE IN DUBAI</span>
+          </div>
+          <p class="card-lead">
+            Built and deployed multiple AI agent prototypes for booking automation, virtual assistance, and business process automation, alongside predictive models, investor dashboards, and interactive business intelligence tools.
+          </p>
+          <div class="code-preview-box">
+            <pre><code><span class="code-keyword">const</span> candidate = {
+  name: <span class="code-str">"Nawfil Faraaz Shahulhameed"</span>,
+  role: <span class="code-str">"Data Scientist & Software Developer"</span>,
+  location: <span class="code-str">"Dubai, UAE"</span>,
+  website: <span class="code-str">"nawfil.tech"</span>,
+  degree: <span class="code-str">"MSc Data Science (GPA 8.6)"</span>,
+  specialties: [<span class="code-str">"AI Agents"</span>, <span class="code-str">"RAG"</span>, <span class="code-str">"Prompt Defense"</span>, <span class="code-str">"NestJS"</span>, <span class="code-str">"Python"</span>]
+};</code></pre>
+          </div>
+        </article>
+
+        <article class="info-card creative-card tilt-card spotlight-card reveal">
+          <div class="card-head-bar">
+            <span class="card-label">// EDUCATION & ACADEMIC CREDENTIALS</span>
+            <span class="status-pill blue">VERIFIED DEGREES</span>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <h3>Master's in Data Science</h3>
+              <p class="timeline-school">Middlesex University, Dubai · 2024</p>
+              <div class="timeline-badge">GPA: 8.6 / 10.0 · Data Science, ML & Statistical Analysis</div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <h3>Bachelor's in Computer Application (BCA)</h3>
+              <p class="timeline-school">New College, Chennai (University of Madras) · 2021 – 2024</p>
+              <div class="timeline-badge">GPA: 8.4 / 10.0 · Member, College Student Union</div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- SKILLS MATRIX -->
-    <section id="skills" class="grid-section">
-      <div class="ui-card">
-        <h2 class="section-title text-center">Technical Skills</h2>
-        <div class="skills-container">
+    <!-- EYE-CATCHING EXECUTIVE EXPERIENCE & STARTUP DOSSIER SECTION -->
+    <section id="experience" class="section experience-dossier-section">
+      <div class="container section-head reveal">
+        <p class="section-kicker">// PROFESSIONAL & STARTUP EXPERIENCE</p>
+        <h2>Proven Engineering, AI Agents & Data Leadership Record</h2>
+        <p>
+          Detailed work history extracted directly from Nawfil’s updated ATS resume (`Nawfil_Faraaz_Resume_ATS.docx`).
+        </p>
+      </div>
 
-          <div class="skill-category">
-            <h4>Programming Languages</h4>
-            <div class="skill-tags">
-              <span>Python</span><span>JavaScript (ES6+)</span><span>TypeScript</span><span>Java</span><span>SQL</span><span>R</span><span>C# / .NET</span><span>HTML5 / CSS3</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h4>Frontend & UI</h4>
-            <div class="skill-tags">
-              <span>React.js</span><span>Next.js</span><span>Bootstrap</span><span>Tailwind CSS</span><span>Vite</span><span>Responsive Design</span><span>Figma (UI Collab)</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h4>Backend & APIs</h4>
-            <div class="skill-tags">
-              <span>Node.js</span><span>Express.js</span><span>REST APIs</span><span>GraphQL</span><span>Flask</span><span>FastAPI</span><span>Microservices</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h4>AI, ML & Automation</h4>
-            <div class="skill-tags">
-              <span>LangChain</span><span>n8n</span><span>AI Agents</span><span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>Scikit-learn</span><span>TensorFlow</span><span>Pandas / NumPy</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h4>Databases & Cloud</h4>
-            <div class="skill-tags">
-              <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Pinecone (Vector DB)</span><span>Firebase</span><span>AWS</span><span>GCP</span><span>Docker</span><span>Git / GitHub</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h4>Data & Visualization</h4>
-            <div class="skill-tags">
-              <span>Power BI</span><span>Tableau</span><span>Matplotlib</span><span>Seaborn</span><span>Jupyter Notebook</span><span>RStudio</span><span>Excel (Advanced)</span>
-            </div>
-          </div>
-
+      <!-- Quick Hiring Dossier Banner -->
+      <div class="container dossier-quick-banner tilt-card spotlight-card reveal">
+        <div class="dossier-pill-header">
+          <span class="d-dot"></span>
+          <span>RECRUITER SUMMARY // DUBAI, UAE</span>
         </div>
+        <div class="dossier-stats-grid">
+          <div class="d-stat">
+            <span class="d-val">TechnoCIT</span>
+            <span class="d-lbl">Dubai, UAE (2 yrs 1 mo Total)</span>
+          </div>
+          <div class="d-stat">
+            <span class="d-val">TwinTik Developer</span>
+            <span class="d-lbl">Apple & Google Store App Deployed</span>
+          </div>
+          <div class="d-stat">
+            <span class="d-val">Aqademiq Lead</span>
+            <span class="d-lbl">Data Analytics Lead & Investor Dashboards</span>
+          </div>
+          <div class="d-stat">
+            <span class="d-val">AI Agents & RAG</span>
+            <span class="d-lbl">LangChain, Pinecone & Prompt Injection for KB</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Experience & Skill Matrix Split -->
+      <div class="container experience-grid mt-4">
+        <!-- Interactive Career Record Timeline Column -->
+        <article class="experience-card tilt-card spotlight-card reveal">
+          <div class="exp-card-header">
+            <p class="section-kicker">// WORK HISTORY DETAILS</p>
+            <span class="verified-badge"><i class="v-icon">✓</i> VERIFIED RECORD</span>
+          </div>
+
+          <div class="exp-role-timeline">
+            <!-- Role 1: TechnoCIT Software Developer -->
+            <div class="exp-role-item active-role">
+              <div class="role-node-marker">01</div>
+              <div class="role-content-box">
+                <div class="role-title-row">
+                  <div>
+                    <span class="company-tag blue">TECHNOCIT SOFTWARE SOLUTIONS · DUBAI</span>
+                    <h3 class="role-heading">Software Developer <span class="role-type">(Full-time, On-site)</span></h3>
+                  </div>
+                  <span class="duration-badge">Apr 2026 – Present</span>
+                </div>
+                <div class="role-bullets-grid">
+                  <div class="r-bullet"><span>🚀</span> <strong>TwinTik Product Developer:</strong> Developed full-stack features and handled store deployment of TwinTik B2B platform to Apple App Store & Google Play Store.</div>
+                  <div class="r-bullet"><span>⚙️</span> <strong>Backend Architecture:</strong> Architected backend systems using Node.js, NestJS, and PostgreSQL to support scalable application logic.</div>
+                  <div class="r-bullet"><span>🌐</span> <strong>CMS Platforms:</strong> Built and managed website content using Webflow, Wix, and Tridion CMS.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Role 2: TechnoCIT AI Engineer Intern -->
+            <div class="exp-role-item">
+              <div class="role-node-marker">02</div>
+              <div class="role-content-box">
+                <div class="role-title-row">
+                  <div>
+                    <span class="company-tag green">TECHNOCIT AI LAB · DUBAI</span>
+                    <h3 class="role-heading">AI Engineer Intern <span class="role-type">(On-site)</span></h3>
+                  </div>
+                  <span class="duration-badge">Sep 2025 – Apr 2026</span>
+                </div>
+                <div class="role-bullets-grid">
+                  <div class="r-bullet"><span>🤖</span> <strong>AI Agent Prototypes:</strong> Designed and built AI agent prototypes for booking automation, virtual assistance, and multi-purpose business workflows trained with RAG pipelines.</div>
+                  <div class="r-bullet"><span>⚡</span> <strong>RAG Chatbots:</strong> Engineered RAG-powered chatbots using n8n workflows, integrating LLMs for automated business logic.</div>
+                  <div class="r-bullet"><span>🛡️</span> <strong>Prompt Injection for KB:</strong> Conducted prompt injection testing for Knowledge Base (KB) AI agents to evaluate robustness and vulnerability boundaries.</div>
+                  <div class="r-bullet"><span>👁️</span> <strong>Computer Vision:</strong> Built a functional Face Detection POC for real-time security and user verification.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Role 3: TechnoCIT Software Engineer Intern -->
+            <div class="exp-role-item">
+              <div class="role-node-marker">03</div>
+              <div class="role-content-box">
+                <div class="role-title-row">
+                  <div>
+                    <span class="company-tag amber">TECHNOCIT · REMOTE</span>
+                    <h3 class="role-heading">Software Engineer Intern <span class="role-type">(Remote)</span></h3>
+                  </div>
+                  <span class="duration-badge">Sep 2024 – Oct 2025</span>
+                </div>
+                <div class="role-bullets-grid">
+                  <div class="r-bullet"><span>💻</span> Contributed to web development and frontend projects focusing on data research and responsive web design.</div>
+                  <div class="r-bullet"><span>💻</span> Delivered responsive websites and web pages for internal and client projects using modern frontend tech.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Role 4: Startup Experience Aqademiq -->
+            <div class="exp-role-item">
+              <div class="role-node-marker">04</div>
+              <div class="role-content-box">
+                <div class="role-title-row">
+                  <div>
+                    <span class="company-tag blue">AQADEMIQ (STARTUP)</span>
+                    <h3 class="role-heading">Data Analytics Lead <span class="role-type">(Part-Time)</span></h3>
+                  </div>
+                  <span class="duration-badge">Jan 2024 – Present</span>
+                </div>
+                <div class="role-bullets-grid">
+                  <div class="r-bullet"><span>📊</span> <strong>Investor Dashboard:</strong> Designed a dedicated investor dashboard consolidating growth, engagement, and performance metrics to support fundraising.</div>
+                  <div class="r-bullet"><span>📈</span> <strong>Metrics Tracking:</strong> Built and maintained interactive dashboards tracking key business & product metrics for the study platform.</div>
+                  <div class="r-bullet"><span>💡</span> <strong>Product Strategy:</strong> Partnered with founding team to translate raw data into actionable insights for marketing & growth decisions.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Skill Matrix & Technical Stack Column -->
+        <article class="experience-card tilt-card spotlight-card reveal">
+          <div class="exp-card-header">
+            <p class="section-kicker">// ATS CORE SKILLS MATRIX</p>
+            <span class="verified-badge blue">VERIFIED COMPETENCIES</span>
+          </div>
+
+          <!-- Interactive Skill Filter Tabs -->
+          <div class="skill-filter-bar">
+            <button class="skill-tab active" data-filter="all">All Stack</button>
+            <button class="skill-tab" data-filter="ai">AI & ML</button>
+            <button class="skill-tab" data-filter="backend">Backend & Cloud</button>
+            <button class="skill-tab" data-filter="data">Data & Visualization</button>
+            <button class="skill-tab" data-filter="prog">Programming</button>
+          </div>
+
+          <!-- Skill Proficiency Bars -->
+          <div class="skill-bars-list">
+            <div class="skill-bar-item" data-cat="ai">
+              <div class="s-bar-label">
+                <strong>AI Agents, LLMs & RAG (LangChain, LangSmith)</strong>
+                <span class="s-percent">96%</span>
+              </div>
+              <div class="s-bar-track"><div class="s-bar-fill" style="width: 96%;"></div></div>
+            </div>
+
+            <div class="skill-bar-item" data-cat="ai">
+              <div class="s-bar-label">
+                <strong>Prompt Injection for KB for AI Agents</strong>
+                <span class="s-percent">94%</span>
+              </div>
+              <div class="s-bar-track"><div class="s-bar-fill" style="width: 94%;"></div></div>
+            </div>
+
+            <div class="skill-bar-item" data-cat="backend">
+              <div class="s-bar-label">
+                <strong>NestJS, Node.js & PostgreSQL</strong>
+                <span class="s-percent">92%</span>
+              </div>
+              <div class="s-bar-track"><div class="s-bar-fill" style="width: 92%;"></div></div>
+            </div>
+
+            <div class="skill-bar-item" data-cat="data">
+              <div class="s-bar-label">
+                <strong>Data Analytics & Investor Dashboards (Power BI)</strong>
+                <span class="s-percent">90%</span>
+              </div>
+              <div class="s-bar-track"><div class="s-bar-fill" style="width: 90%;"></div></div>
+            </div>
+
+            <div class="skill-bar-item" data-cat="backend">
+              <div class="s-bar-label">
+                <strong>Cloud & CMS (AWS, GCP, Webflow, Wix, Tridion)</strong>
+                <span class="s-percent">88%</span>
+              </div>
+              <div class="s-bar-track"><div class="s-bar-fill" style="width: 88%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Interactive Skill Cloud from ATS Resume -->
+          <div class="skill-cloud mt-4" id="interactive-skill-cloud">
+            <span class="skill-item" data-cat="prog">Python</span>
+            <span class="skill-item" data-cat="prog">Java</span>
+            <span class="skill-item" data-cat="prog">R</span>
+            <span class="skill-item" data-cat="prog">SQL</span>
+            <span class="skill-item" data-cat="prog">Node.js</span>
+            <span class="skill-item" data-cat="prog">React Native</span>
+            <span class="skill-item" data-cat="ai">AI Agents</span>
+            <span class="skill-item" data-cat="ai">LLMs</span>
+            <span class="skill-item" data-cat="ai">RAG</span>
+            <span class="skill-item" data-cat="ai">LangChain</span>
+            <span class="skill-item" data-cat="ai">LangSmith</span>
+            <span class="skill-item" data-cat="ai">Prompt Engineering</span>
+            <span class="skill-item" data-cat="ai">Prompt Injection for KB AI Agents</span>
+            <span class="skill-item" data-cat="ai">Pinecone Vector DB</span>
+            <span class="skill-item" data-cat="ai">Computer Vision</span>
+            <span class="skill-item" data-cat="ai">n8n Automation</span>
+            <span class="skill-item" data-cat="data">Power BI</span>
+            <span class="skill-item" data-cat="data">Statistical Modeling</span>
+            <span class="skill-item" data-cat="backend">PostgreSQL</span>
+            <span class="skill-item" data-cat="backend">AWS / GCP</span>
+            <span class="skill-item" data-cat="backend">Webflow / Wix</span>
+            <span class="skill-item" data-cat="backend">Tridion CMS</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & LANGUAGES SHOWCASE SECTION -->
+    <section id="certifications" class="section">
+      <div class="container section-head reveal">
+        <p class="section-kicker">// VERIFIED CERTIFICATIONS & LANGUAGES</p>
+        <h2>8 Verified Industry Certifications & Multilingual Ability</h2>
+        <p>
+          Continuous learning record verified across data analytics, full-stack web engineering, cybersecurity, and cloud technologies.
+        </p>
+      </div>
+
+      <div class="container cert-grid">
+        <div class="cert-card tilt-card spotlight-card reveal">
+          <div class="cert-badge">GOOGLE</div>
+          <h3>Google Data Analytics Professional Certificate</h3>
+          <p>Verified professional certificate in data processing, statistical visualization, R, and analytics.</p>
+        </div>
+
+        <div class="cert-card tilt-card spotlight-card reveal">
+          <div class="cert-badge">CISCO</div>
+          <h3>Introduction to Data Science</h3>
+          <p>Foundational data structures, statistical analysis, and machine learning principles.</p>
+        </div>
+
+        <div class="cert-card tilt-card spotlight-card reveal">
+          <div class="cert-badge">UDEMY</div>
+          <h3>Full-Stack Web Development Bootcamp</h3>
+          <p>Comprehensive frontend and backend web application engineering.</p>
+        </div>
+
+        <div class="cert-card tilt-card spotlight-card reveal">
+          <div class="cert-badge">LINKEDIN LEARNING</div>
+          <h3>Advanced Java</h3>
+          <p>Advanced object-oriented programming, design patterns, and enterprise Java systems.</p>
+        </div>
+
+        <div class="cert-card tilt-card spotlight-card reveal">
+          <div class="cert-badge">GUVI</div>
+          <h3>Python Programming</h3>
+          <p>Core Python algorithms, data structures, and script automation.</p>
+        </div>
+
+        <div class="cert-card tilt-card spotlight-card reveal">
+          <div class="cert-badge">SSI EDUCATION</div>
+          <h3>Core Java</h3>
+          <p>Object-oriented foundations, memory management, and Java application architecture.</p>
+        </div>
+
+        <div class="cert-card tilt-card spotlight-card reveal">
+          <div class="cert-badge">CISCO</div>
+          <h3>Cybersecurity Basics</h3>
+          <p>Network security fundamentals, identity verification, and threat defense.</p>
+        </div>
+
+        <div class="cert-card tilt-card spotlight-card reveal">
+          <div class="cert-badge">LINKEDIN LEARNING</div>
+          <h3>Power BI Basics</h3>
+          <p>Business intelligence dashboards, DAX data modeling, and reporting.</p>
+        </div>
+
+        <!-- Languages Card -->
+        <div class="cert-card tilt-card spotlight-card reveal lang-card-highlight">
+          <div class="cert-badge">LANGUAGES SPOKEN</div>
+          <h3>Multilingual Competency</h3>
+          <div class="lang-pills">
+            <span class="l-pill">English (Fluent)</span>
+            <span class="l-pill">Tamil (Fluent)</span>
+            <span class="l-pill">Hindi (Fluent)</span>
+            <span class="l-pill">Malayalam (Fluent)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Developer Terminal Screen Section -->
+    <section id="terminal-labs" class="section terminal-animated-section">
+      <!-- Background Interactive Kinetic Tech Node Canvas -->
+      <div class="matrix-canvas-wrapper" aria-hidden="true">
+        <canvas id="tech-matrix-canvas"></canvas>
+      </div>
+
+      <div class="container section-head reveal">
+        <p class="section-kicker">// 02. TERMINAL CONSOLE & KINETIC ENGINE</p>
+        <h2>Developer Perspective & Interactive Resume Shell.</h2>
+        <p>
+          Query Nawfil's official experience, technical stack, and verified metrics directly in interactive terminal format.
+        </p>
+      </div>
+
+      <div class="container terminal-console-wrapper reveal">
+        <!-- macOS Terminal Window -->
+        <article class="main-terminal-window tilt-card spotlight-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">nawfil@mac: ~/ats-resume-dossier</div>
+            <div class="terminal-actions-tab">
+              <button class="term-btn active" data-tab="experience">cat experience.zsh</button>
+              <button class="term-btn" data-tab="stack">./display_stacks.py</button>
+              <button class="term-btn" data-tab="metrics">./certifications.sh</button>
+            </div>
+          </div>
+
+          <div class="terminal-body-content">
+            <!-- Experience Shell Tab -->
+            <div class="term-pane active" id="pane-experience">
+              <p class="term-line"><span class="t-prompt">nawfil@mac</span> <span class="t-cmd">cat experience_timeline.json</span></p>
+              <div class="term-json-block">
+                <p><span class="t-key">"technocit_experience"</span>: {</p>
+                <p>  <span class="t-key">"total_duration"</span>: <span class="t-highlight">"2 yrs 1 mo"</span>,</p>
+                <p>  <span class="t-key">"software_developer"</span>: <span class="t-str">"TwinTik B2B platform on Apple & Google stores, NestJS & PostgreSQL"</span>,</p>
+                <p>  <span class="t-key">"ai_engineer_intern"</span>: <span class="t-str">"AI Agents, RAG chatbots, Prompt Injection Testing, Face Detection POC"</span>,</p>
+                <p>  <span class="t-key">"software_engineer_intern"</span>: <span class="t-str">"Frontend web development & data research"</span></p>
+                <p>},</p>
+                <p><span class="t-key">"startup_experience"</span>: {</p>
+                <p>  <span class="t-key">"company"</span>: <span class="t-str">"Aqademiq (Startup)"</span>,</p>
+                <p>  <span class="t-key">"role"</span>: <span class="t-str">"Data Analytics Lead"</span>,</p>
+                <p>  <span class="t-key">"focus"</span>: <span class="t-str">"Investor dashboards, growth metrics & product analytics"</span></p>
+                <p>}</p>
+              </div>
+              <p class="term-line mt-3"><span class="t-prompt">status:</span> <span class="t-success">✓ 100% synced with Nawfil_Faraaz_Resume_ATS.docx</span></p>
+            </div>
+
+            <!-- Stacks Shell Tab -->
+            <div class="term-pane" id="pane-stack">
+              <p class="term-line"><span class="t-prompt">nawfil@mac</span> <span class="t-cmd">python3 display_stacks.py --category ats_all</span></p>
+              <div class="term-output-grid">
+                <div class="term-stack-group">
+                  <span class="term-group-title">LAYER 01: AI AGENTS & RAG</span>
+                  <div class="term-chips">
+                    <span>AI Agents</span><span>RAG Pipelines</span><span>LangChain</span><span>LangSmith</span><span>Prompt Defense</span><span>Pinecone Vector DB</span>
+                  </div>
+                </div>
+
+                <div class="term-stack-group">
+                  <span class="term-group-title">LAYER 02: FULL-STACK & CMS</span>
+                  <div class="term-chips">
+                    <span>NestJS</span><span>Node.js</span><span>PostgreSQL</span><span>SQL</span><span>React Native</span><span>Webflow / Wix / Tridion</span>
+                  </div>
+                </div>
+
+                <div class="term-stack-group">
+                  <span class="term-group-title">LAYER 03: DATA & STARTUP</span>
+                  <div class="term-chips">
+                    <span>Power BI</span><span>Investor Dashboards</span><span>Python</span><span>RStudio</span><span>Statistical Modeling</span>
+                  </div>
+                </div>
+
+                <div class="term-stack-group">
+                  <span class="term-group-title">LAYER 04: CLOUD & TOOLS</span>
+                  <div class="term-chips">
+                    <span>AWS</span><span>GCP</span><span>Docker</span><span>Git / GitHub</span><span>Face Detection POC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certifications Shell Tab -->
+            <div class="term-pane" id="pane-metrics">
+              <p class="term-line"><span class="t-prompt">nawfil@mac</span> <span class="t-cmd">./certifications.sh --list verified</span></p>
+              <div class="term-metrics-list">
+                <p><span class="t-label">Google:</span> <span class="t-success">Data Analytics Professional Certificate</span></p>
+                <p><span class="t-label">Cisco:</span> <span class="t-success">Introduction to Data Science & Cybersecurity Basics</span></p>
+                <p><span class="t-label">Udemy:</span> <span class="t-success">Full-Stack Web Development Bootcamp</span></p>
+                <p><span class="t-label">LinkedIn Learning:</span> <span class="t-success">Advanced Java & Power BI Basics</span></p>
+                <p><span class="t-label">GUVI & SSI:</span> <span class="t-success">Python Programming & Core Java</span></p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- REAL RESUME PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container section-head reveal">
+        <p class="section-kicker">// KEY PROJECTS & ACHIEVEMENTS</p>
+        <h2>High-Impact Applications, AI Agents & Deployed Systems</h2>
+        <p>
+          Selected projects from Nawfil’s updated resume spanning AI agent prototypes, enterprise mobile apps, investor dashboards, and client web applications.
+        </p>
+      </div>
+
+      <div class="container">
+        <div id="projects-container" class="projects-grid"></div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-content">
-      <div class="footer-info">
-        <h3>Let's build something extraordinary.</h3>
-        <p>Actively seeking full-time and internship opportunities in Data Science, Software Development, and AI-integrated systems. Available immediately.</p>
+  <footer id="contact" class="footer section">
+    <div class="container footer-card reveal">
+      <div class="footer-copy">
+        <p class="section-kicker">// INITIALIZE CONTACT</p>
+        <h2>Let’s build high-impact AI agents & full-stack web applications.</h2>
+        <p>
+          Nawfil Faraaz is available for full-time Data Scientist, Software Developer, and AI Engineer roles in Dubai, UAE and remotely.
+        </p>
       </div>
-      <div class="footer-contacts">
-        <a href="mailto:nawfil2003@gmail.com" class="contact-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-          nawfil2003@gmail.com
-        </a>
-        <a href="tel:+971557947447" class="contact-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          +971 55 794 7447
-        </a>
-        <a href="https://github.com/nawfil03" target="_blank" class="contact-link">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
-          github.com/nawfil03
-        </a>
-        <a href="https://www.linkedin.com/in/nawfil-faraaz-shahul-hameed-645331284/" target="_blank" class="contact-link">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-          linkedin.com/in/nawfil-faraaz
-        </a>
+
+      <div class="footer-actions">
+        <a class="button button-primary" href="mailto:nawfil2003@gmail.com">Email me (nawfil2003@gmail.com)</a>
+        <a class="button button-secondary" href="tel:+971557947447">Call +971 55 794 7447</a>
+        <a class="footer-link" href="https://nawfil.tech" target="_blank" rel="noreferrer">Website (nawfil.tech)</a>
+        <a class="footer-link" href="https://www.linkedin.com/in/nawfil-faraaz-shahul-hameed-645331284/" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+        <a class="footer-link" href="https://github.com/nawfil03" target="_blank" rel="noreferrer">GitHub Profile</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Nawfil Faraaz. All rights reserved.</p>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Nawfil Faraaz. Data Scientist & Software Developer · Dubai, UAE.</p>
     </div>
   </footer>
 
-  <!-- CV Modal Preview -->
-  <div id="cv-modal" class="modal-overlay">
-    <div class="modal-container">
-      <div class="modal-header">
-        <h3 class="modal-title">Nawfil_Faraaz_Resume.pdf</h3>
-        <div class="modal-actions">
-          <a href="/Nawfil_Faraaz_Resume (3).pdf" download="Nawfil_Faraaz_Resume.pdf" class="modal-btn-download" title="Download CV">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-          </a>
-          <button id="close-cv" class="modal-btn-close" title="Close">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-          </button>
+  <!-- Interactive Resume Viewer Modal -->
+  <div id="resume-modal" class="resume-modal" aria-hidden="true" role="dialog" aria-labelledby="resume-modal-title">
+    <div class="resume-modal-backdrop" data-close-modal></div>
+    <div class="resume-modal-container">
+      <header class="resume-modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge">ATS VERIFIED DOCUMENT</span>
+          <h2 id="resume-modal-title">Nawfil Faraaz — Official Resume</h2>
+          <span class="modal-subtitle">MSc Data Science (GPA 8.6) · Software Developer & AI Engineer</span>
         </div>
-      </div>
-      <div class="modal-body">
-        <iframe src="/Nawfil_Faraaz_Resume (3).pdf#toolbar=0" frameborder="0" width="100%" height="100%"></iframe>
+
+        <div class="resume-modal-controls">
+          <div class="modal-tabs">
+            <button type="button" class="tab-btn active" data-tab="formatted">📄 Document View</button>
+            <button type="button" class="tab-btn" data-tab="pdf">🖥️ PDF Preview</button>
+          </div>
+
+          <div class="modal-download-actions">
+            <a href="/Nawfil_Faraaz_Resume_ATS.docx" download class="btn-modal-action primary">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download ATS (.docx)</span>
+            </a>
+            <a href="/Nawfil_Faraaz_Resume.pdf" download class="btn-modal-action secondary">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span>Download PDF</span>
+            </a>
+            <button type="button" class="btn-modal-action text-only" id="copy-resume-text" title="Copy Text Summary">
+              <span id="copy-text-label">📋 Copy Summary</span>
+            </button>
+          </div>
+
+          <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+        </div>
+      </header>
+
+      <div class="resume-modal-body">
+        <!-- Tab 1: Formatted Document View -->
+        <div id="tab-formatted" class="tab-content active">
+          <div class="resume-paper">
+            <div class="paper-header">
+              <h1 class="paper-name">NAWFIL FARAAZ</h1>
+              <p class="paper-subtitle">DATA SCIENTIST · SOFTWARE DEVELOPER · AI ENGINEER</p>
+              <div class="paper-contact-bar">
+                <span>📍 Dubai, UAE</span>
+                <span>📞 +971 52 384 1353</span>
+                <span>✉️ <a href="mailto:nawfilfaraaz786@gmail.com">nawfilfaraaz786@gmail.com</a></span>
+                <span>🔗 <a href="https://nawfil.tech" target="_blank" rel="noreferrer">nawfil.tech</a></span>
+                <span>💼 <a href="https://www.linkedin.com/in/nawfil-faraaz-shahul-hameed-645331284/" target="_blank" rel="noreferrer">LinkedIn</a></span>
+                <span>💻 <a href="https://github.com/NawfilFaraaz" target="_blank" rel="noreferrer">GitHub</a></span>
+              </div>
+            </div>
+
+            <section class="paper-section">
+              <h3 class="paper-sec-title">EXECUTIVE SUMMARY</h3>
+              <p class="paper-text">
+                Data Scientist & Software Developer with a Master’s degree in Data Science (GPA 8.6) and hands-on expertise building AI Agent prototypes, RAG-powered systems, and scalable full-stack applications. Proven experience at TechnoCIT Software Solutions delivering enterprise B2B store platforms (TwinTik) using NestJS, Node.js, and PostgreSQL, along with AI agent automation, prompt injection for KB for AI agents, and real-time computer vision POCs. Strong foundation in data analytics, statistical modeling, and machine learning.
+              </p>
+            </section>
+
+            <section class="paper-section">
+              <h3 class="paper-sec-title">TECHNICAL SKILLS</h3>
+              <div class="paper-skills-grid">
+                <div class="p-skill-row"><strong>AI & Machine Learning:</strong> AI Agents, LangChain, RAG Pipelines, Prompt Injection for KB AI Agents, n8n Automation, Pinecone Vector DB, Computer Vision (Face Detection POC), Mistral LLM</div>
+                <div class="p-skill-row"><strong>Languages & Backends:</strong> Python, JavaScript, TypeScript, SQL (PostgreSQL), NestJS, Node.js, RESTful APIs</div>
+                <div class="p-skill-row"><strong>Web & CMS Platforms:</strong> HTML5, CSS3, Webflow, Wix, Tridion CMS, Responsive Web Architecture</div>
+                <div class="p-skill-row"><strong>Data & Analytics:</strong> Data Science, Statistical Modeling, Power BI, Data Analytics, ETL Pipelines</div>
+                <div class="p-skill-row"><strong>DevOps & Tools:</strong> Git/GitHub, Docker, Apple App Store & Google Play Store Deployment</div>
+              </div>
+            </section>
+
+            <section class="paper-section">
+              <h3 class="paper-sec-title">WORK EXPERIENCE</h3>
+
+              <div class="paper-exp-item">
+                <div class="paper-exp-head">
+                  <div>
+                    <h4 class="paper-role">Software Developer <span class="paper-comp">· TechnoCIT Software Solutions</span></h4>
+                    <span class="paper-loc">Dubai, UAE</span>
+                  </div>
+                  <span class="paper-date">Apr 2026 – Present</span>
+                </div>
+                <ul class="paper-bullets">
+                  <li><strong>TwinTik Product Developer:</strong> Developed full-stack features and handled store deployment of TwinTik B2B platform to Apple App Store & Google Play Store.</li>
+                  <li><strong>Backend Architecture:</strong> Architected backend systems using Node.js, NestJS, and PostgreSQL to support scalable application logic.</li>
+                  <li><strong>CMS Management:</strong> Built and managed website content using Webflow, Wix, and Tridion CMS platforms.</li>
+                </ul>
+              </div>
+
+              <div class="paper-exp-item">
+                <div class="paper-exp-head">
+                  <div>
+                    <h4 class="paper-role">AI Engineer Intern <span class="paper-comp">· TechnoCIT Software Solutions</span></h4>
+                    <span class="paper-loc">Dubai, UAE</span>
+                  </div>
+                  <span class="paper-date">Sep 2025 – Apr 2026</span>
+                </div>
+                <ul class="paper-bullets">
+                  <li><strong>AI Agent Prototypes:</strong> Engineered functional AI agent prototypes for automated booking and customer support workflows.</li>
+                  <li><strong>RAG Systems:</strong> Built RAG pipelines integrating LangChain, Pinecone Vector DB, and LLMs via n8n automation.</li>
+                  <li><strong>Prompt Injection & Vision:</strong> Conducted prompt injection testing for Knowledge Base (KB) AI agents and built a real-time Face Detection POC for identity verification.</li>
+                </ul>
+              </div>
+
+              <div class="paper-exp-item">
+                <div class="paper-exp-head">
+                  <div>
+                    <h4 class="paper-role">Software Engineer Intern <span class="paper-comp">· TechnoCIT Software Solutions</span></h4>
+                    <span class="paper-loc">Dubai, UAE</span>
+                  </div>
+                  <span class="paper-date">Sep 2024 – Oct 2025</span>
+                </div>
+                <ul class="paper-bullets">
+                  <li>Delivered responsive web components, conducted data research, and assisted in backend workflow optimization.</li>
+                </ul>
+              </div>
+
+              <div class="paper-exp-item">
+                <div class="paper-exp-head">
+                  <div>
+                    <h4 class="paper-role">Data Analytics Lead <span class="paper-type">(Part-Time)</span> <span class="paper-comp">· Aqademiq (Startup)</span></h4>
+                    <span class="paper-loc">Dubai, UAE</span>
+                  </div>
+                  <span class="paper-date">Jan 2024 – Present</span>
+                </div>
+                <ul class="paper-bullets">
+                  <li>Designed and implemented dedicated Investor Dashboards consolidating growth metrics and platform KPIs for investor pitch presentations.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="paper-section">
+              <h3 class="paper-sec-title">EDUCATION</h3>
+              <div class="paper-edu-grid">
+                <div class="paper-edu-item">
+                  <div class="paper-exp-head">
+                    <div>
+                      <h4 class="paper-degree">Master of Science (MSc) in Data Science <span class="paper-gpa">(GPA: 8.6)</span></h4>
+                      <span class="paper-school">Middlesex University Dubai</span>
+                    </div>
+                    <span class="paper-date">Graduated 2026</span>
+                  </div>
+                </div>
+                <div class="paper-edu-item mt-2">
+                  <div class="paper-exp-head">
+                    <div>
+                      <h4 class="paper-degree">Bachelor of Computer Applications (BCA) <span class="paper-gpa">(GPA: 8.4)</span></h4>
+                      <span class="paper-school">The New College (University of Madras), Chennai</span>
+                    </div>
+                    <span class="paper-date">Graduated 2024</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="paper-grid-2col">
+              <section class="paper-section">
+                <h3 class="paper-sec-title">FEATURED PROJECTS</h3>
+                <ul class="paper-bullets compact">
+                  <li><strong>AI Agent Prototypes:</strong> Booking & Support Automation with Prompt Injection for KB</li>
+                  <li><strong>TwinTik B2B Platform:</strong> Apple & Google App Store Deployed Application</li>
+                  <li><strong>Aqademiq Investor Dashboard:</strong> Startup Performance & KPI Analytics</li>
+                  <li><strong>Beena AI Chatbot:</strong> Mistral LLM, Pinecone Vector DB, n8n RAG Engine</li>
+                  <li><strong>Face Detection POC:</strong> Real-time Computer Vision Verification</li>
+                  <li><strong>Automated QR Code Generator:</strong> Bulk engine (-70% manual workload)</li>
+                </ul>
+              </section>
+
+              <section class="paper-section">
+                <h3 class="paper-sec-title">CERTIFICATIONS & LANGUAGES</h3>
+                <ul class="paper-bullets compact">
+                  <li>Google Data Analytics Professional Certificate</li>
+                  <li>Cisco Data Science Certificate</li>
+                  <li>Full-Stack Web Development Certificate</li>
+                  <li>Advanced Java & Core Java (SSI)</li>
+                  <li>Python GUVI & Cisco Cybersecurity</li>
+                  <li>Power BI Data Analyst Certification</li>
+                  <li><strong>Languages:</strong> English, Tamil, Hindi, Malayalam</li>
+                </ul>
+              </section>
+            </div>
+
+            <!-- Footer Download CTA Bar Inside Resume Paper -->
+            <div class="paper-footer-download">
+              <span>Need the official resume document files?</span>
+              <div class="paper-cta-buttons">
+                <a href="/Nawfil_Faraaz_Resume_ATS.docx" download class="btn-paper-download primary">📥 Download ATS (.docx)</a>
+                <a href="/Nawfil_Faraaz_Resume.pdf" download class="btn-paper-download secondary">📄 Download PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: PDF Document View -->
+        <div id="tab-pdf" class="tab-content">
+          <div class="pdf-viewer-container">
+            <iframe id="pdf-iframe" src="/Nawfil_Faraaz_Resume.pdf#toolbar=1" title="Nawfil Faraaz Resume PDF" width="100%" height="720px"></iframe>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <script type="module" src="/main.js"></script>
 </body>
-
 </html>
